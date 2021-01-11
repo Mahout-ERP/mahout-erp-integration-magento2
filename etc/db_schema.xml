@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table comment="mahout_erp_queue Table" engine="innodb" name="mahout_erp_queue" resource="default">
+		<column comment="Entity Id" identity="true" name="queue_id" nullable="false" padding="6" unsigned="true" xsi:type="smallint"/>
+		<constraint referenceId="PRIMARY" xsi:type="primary">
+			<column name="queue_id"/>
+		</constraint>
+		<column length="255" name="request_type" nullable="true" xsi:type="varchar"/>
+		<column identity="false" name="request_entity_id" nullable="true" unsigned="true" xsi:type="int"/>
+		<column length="255" name="request_method" nullable="true" xsi:type="varchar"/>
+		<column name="request_data" nullable="true" xsi:type="text"/>
+		<column identity="false" name="request_result" nullable="true" xsi:type="int"/>
+		<column name="request_delete" nullable="true" xsi:type="smallint"/>
+		<column identity="false" name="request_runs" nullable="true" unsigned="true" xsi:type="int"/>
+		<column name="status" nullable="true" xsi:type="smallint"/>
+		<column name="response" nullable="true" xsi:type="text"/>
+		<column name="created_at" nullable="false" xsi:type="timestamp"/>
+		<column name="updated_at" nullable="true" xsi:type="timestamp"/>
+	</table>
+</schema>

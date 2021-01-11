@@ -1,0 +1,23 @@
+{
+    "name": "mahout/module-erp",
+    "description": "Module for integration with Mahout ERP Cloud",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "email": "ti@mahout.com.br",
+            "name": "IT SUPPORT"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mahout\\ERP\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

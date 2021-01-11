@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+	<event name="controller_action_catalog_product_save_entity_after">
+		<observer instance="Mahout\ERP\Observer\Controller\ActionCatalogProductSaveEntityAfter" name="mahout_erp_observer_controller_actioncatalogproductsaveentityafter_controller_action_catalog_product_save_entity_after"/>
+	</event>
+	<event name="sales_order_invoice_register">
+		<observer instance="Mahout\ERP\Observer\Sales\OrderInvoiceRegister" name="mahout_erp_observer_sales_orderinvoiceregister_sales_order_invoice_register"/>
+	</event>
+</config>

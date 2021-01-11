@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<mahout_erp>
+			<configuration>
+				<enable>0</enable>
+				<environment>dev</environment>
+				<base_url_dev>https://development.mahout.cloud/</base_url_dev>
+				<base_url_prod/>
+				<public_key_dev/>
+				<public_key_prod/>
+				<token_dev/>
+				<token_prod/>
+				<debug>0</debug>
+			</configuration>
+		</mahout_erp>
+	</default>
+</config>

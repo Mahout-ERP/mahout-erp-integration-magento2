@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add action="mahout_erp/queue/index" id="Mahout_ERP::mahout_erp_queue" module="Mahout_ERP" parent="Mahout::top_level" resource="Magento_Backend::content" sortOrder="9999" title="Queue"/>
+		<add id="Mahout::top_level" module="Mahout_ERP" resource="Magento_Backend::content" sortOrder="9999" title="Mahout"/>
+	</menu>
+</config>

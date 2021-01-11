@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="mahout_erp" sortOrder="10" translate="label">
+			<label>Mahout ERP</label>
+		</tab>
+		<section id="mahout_erp" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>Configurações</label>
+			<tab>mahout_erp</tab>
+			<resource>Mahout_ERP::config_mahout_erp</resource>
+			<group id="configuration" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Geral</label>
+				<field id="enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>Enable</label>
+					<comment>Check Enable, for enable this module.</comment>
+					<source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+				</field>
+				<field id="environment" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="select">
+					<label>Environment</label>
+					<source_model>Mahout\ERP\Model\Config\Source\Environment</source_model>
+				</field>
+				<field id="base_url_dev" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="30" translate="label" type="text">
+					<label>Development Base URL</label>
+					<depends>
+						<field id="mahout_erp/configuration/environment">dev</field>
+					</depends>
+				</field>
+				<field id="base_url_prod" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="40" translate="label" type="text">
+					<label>Production Base URL</label>
+					<depends>
+						<field id="mahout_erp/configuration/environment">prod</field>
+					</depends>
+				</field>
+				<field id="public_key_dev" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="50" translate="label" type="password">
+					<label>Development Public Key</label>
+					<backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+					<depends>
+						<field id="mahout_erp/configuration/environment">dev</field>
+					</depends>
+				</field>
+				<field id="public_key_prod" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="60" translate="label" type="password">
+					<label>Production Public Key</label>
+					<backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+					<depends>
+						<field id="mahout_erp/configuration/environment">prod</field>
+					</depends>
+				</field>
+				<field id="token_dev" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="70" translate="label" type="password">
+					<label>Development Token</label>
+					<backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+					<depends>
+						<field id="mahout_erp/configuration/environment">dev</field>
+					</depends>
+				</field>
+				<field id="token_prod" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="80" translate="label" type="password">
+					<label>Production Token</label>
+					<backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+					<depends>
+						<field id="mahout_erp/configuration/environment">prod</field>
+					</depends>
+				</field>
+				<field id="debug" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="200" translate="label" type="select">
+					<label>Debug</label>
+					<comment>Check yes, for enable logging this module.</comment>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

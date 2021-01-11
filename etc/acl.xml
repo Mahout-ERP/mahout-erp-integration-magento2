@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="Mahout_ERP::Queue" sortOrder="10" title="Queue">
+					<resource id="Mahout_ERP::Queue_save" sortOrder="10" title="Save Queue"/>
+					<resource id="Mahout_ERP::Queue_delete" sortOrder="20" title="Delete Queue"/>
+					<resource id="Mahout_ERP::Queue_update" sortOrder="30" title="Update Queue"/>
+					<resource id="Mahout_ERP::Queue_view" sortOrder="40" title="View Queue"/>
+				</resource>
+				<resource id="Magento_Backend::stores">
+					<resource id="Magento_Backend::stores_settings">
+						<resource id="Magento_Config::config">
+							<resource id="Mahout_ERP::config_mahout_erp" title="mahout_erp"/>
+						</resource>
+					</resource>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

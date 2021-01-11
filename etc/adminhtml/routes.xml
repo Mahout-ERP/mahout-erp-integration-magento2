@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+	<router id="admin">
+		<route frontName="mahout_erp" id="mahout_erp">
+			<module before="Magento_Backend" name="Mahout_ERP"/>
+		</route>
+	</router>
+</config>
