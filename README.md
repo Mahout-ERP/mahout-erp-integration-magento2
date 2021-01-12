@@ -27,11 +27,16 @@ Module for integration with Mahout ERP Cloud
     - private repository `repo.magento.com`
     - public repository `packagist.org`
     - public github repository as vcs
- - Add the composer repository to the configuration by running `composer config repositories.mahout_erp composer https://packagist.org/`
- - Install the module composer by running `composer require mahout-erp/module-erp`
- - enable the module by running `php bin/magento module:enable Mahout_ERP`
- - apply database updates by running `php bin/magento setup:upgrade`\*
- - Flush the cache by running `php bin/magento cache:flush`
+ - Add the composer repository to the configuration by running:
+   - `composer config repositories.mahout_erp composer https://packagist.org/`
+ - Install the module composer by running:
+   - `composer require mahout-erp/module-erp`
+ - enable the module by running:
+   - `php bin/magento module:enable Mahout_ERP`
+ - apply database updates by running:
+   - `php bin/magento setup:upgrade`
+ - Flush the cache by running:
+   - `php bin/magento cache:flush`
 
 
 ## Configuration
@@ -48,16 +53,12 @@ Module for integration with Mahout ERP Cloud
 ## Specifications
 
  - Model
-	- Queue
+    - Queue
 
- - Observer
-	- controller_action_catalog_product_save_entity_after > Mahout\ERP\Observer\Controller\ActionCatalogProductSaveEntityAfter
-
- - Observer
-	- sales_order_invoice_register > Mahout\ERP\Observer\Sales\OrderInvoiceRegister
+    - sales_order_invoice_register > Mahout\ERP\Observer\Sales\OrderInvoiceRegister
 
  - Cronjob
-	- mahout_erp_queue
+    - mahout_erp_queue
 
  - Crongroup
-	- default
+    - default
