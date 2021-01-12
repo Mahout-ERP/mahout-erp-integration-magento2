@@ -65,9 +65,6 @@
 					<comment>Check yes, for enable debugging this module.</comment>
 					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
 				</field>
-			</group>
-			<group id="version" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-				<label>Current Version Installed</label>
 				<field id="version" translate="label" type="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
 					<label>Current Version</label>
 					<backend_model>Mahout\ERP\Model\Config\Version</backend_model>

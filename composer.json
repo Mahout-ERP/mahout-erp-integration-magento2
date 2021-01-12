@@ -3,7 +3,7 @@
     "description": "Module for integration with Mahout ERP Cloud",
     "type": "magento2-module",
     "license": "proprietary",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "authors": [
         {
             "email": "ti@mahout.com.br",
