@@ -1,6 +1,4 @@
-# Module Mahout ERP
-
-    ``mahout-erp/module-erp``
+# Magento 2 Module - Mahout ERP Cloud
 
  - [Main Functionalities](#markdown-header-main-functionalities)
  - [Installation](#markdown-header-installation)
@@ -14,19 +12,8 @@ Module for integration with Mahout ERP Cloud
 ## Installation
 \* = in production please use the `--keep-generated` option
 
-### Type 1: Zip file
+### Type 1: Composer
 
- - Unzip the zip file in `app/code/Mahout`
- - Enable the module by running `php bin/magento module:enable Mahout_ERP`
- - Apply database updates by running `php bin/magento setup:upgrade`\*
- - Flush the cache by running `php bin/magento cache:flush`
-
-### Type 2: Composer
-
- - Make the module available in a composer repository for example:
-    - private repository `repo.magento.com`
-    - public repository `packagist.org`
-    - public github repository as vcs
  - Add the composer repository to the configuration by running:
    - `composer config repositories.mahout_erp composer https://packagist.org/`
  - Install the module composer by running:
@@ -37,6 +24,13 @@ Module for integration with Mahout ERP Cloud
    - `php bin/magento setup:upgrade`
  - Flush the cache by running:
    - `php bin/magento cache:flush`
+
+### Type 2: Zip file
+
+- Unzip the zip file in `app/code/Mahout`
+- Enable the module by running `php bin/magento module:enable Mahout_ERP`
+- Apply database updates by running `php bin/magento setup:upgrade`\*
+- Flush the cache by running `php bin/magento cache:flush`
 
 
 ## Configuration
