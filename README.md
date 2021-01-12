@@ -7,7 +7,7 @@
 
 
 ## Main Functionalities
-Module for integration with Mahout ERP Cloud
+Magento 2 Module for integration with Mahout ERP Cloud
 
 ## Installation
 \* = in production please use the `--keep-generated` option
@@ -17,7 +17,7 @@ Module for integration with Mahout ERP Cloud
  - Add the composer repository to the configuration by running:
    - `composer config repositories.mahout_erp composer https://packagist.org/`
  - Install the module composer by running:
-   - `composer require mahout-erp/module-erp`
+   - `composer require mahout-erp/module-magento2-erp`
  - enable the module by running:
    - `php bin/magento module:enable Mahout_ERP`
  - apply database updates by running:

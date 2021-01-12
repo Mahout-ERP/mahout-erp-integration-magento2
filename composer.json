@@ -1,9 +1,9 @@
 {
-    "name": "mahout-erp/module-erp",
+    "name": "mahout-erp/module-magento2-erp",
     "description": "Module for integration with Mahout ERP Cloud",
     "type": "magento2-module",
     "license": "proprietary",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "authors": [
         {
             "email": "ti@mahout.com.br",
