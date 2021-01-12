@@ -3,14 +3,31 @@
     "description": "Module for integration with Mahout ERP Cloud",
     "type": "magento2-module",
     "license": "proprietary",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "authors": [
         {
             "email": "ti@mahout.com.br",
             "name": "IT SUPPORT"
         }
     ],
-    "minimum-stability": "dev-master",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.org/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "~7.2 || ~7.3 || ~7.4",
+        "magento/magento-composer-installer": "*"
+    },
+    "require-dev": {
+        "magento/product-community-edition": "2.*"
+    },
     "autoload": {
         "psr-4": {
             "Mahout\\ERP\\": ""
