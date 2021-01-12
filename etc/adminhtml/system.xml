@@ -21,6 +21,7 @@
 				</field>
 				<field id="base_url_dev" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="30" translate="label" type="text">
 					<label>Development Base URL</label>
+					<comment>Default Base URL: https://development.mahout.cloud/</comment>
 					<depends>
 						<field id="mahout_erp/configuration/environment">dev</field>
 					</depends>
@@ -61,7 +62,7 @@
 				</field>
 				<field id="debug" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="200" translate="label" type="select">
 					<label>Debug</label>
-					<comment>Check yes, for enable logging this module.</comment>
+					<comment>Check yes, for enable debugging this module.</comment>
 					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
 				</field>
 			</group>
