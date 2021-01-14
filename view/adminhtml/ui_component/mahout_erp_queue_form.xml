@@ -40,6 +40,21 @@
 		<settings>
 			<label>General</label>
 		</settings>
+		<field formElement="input" name="request_type" sortOrder="10">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="source" xsi:type="string">Queue</item>
+				</item>
+			</argument>
+			<settings>
+				<dataType>text</dataType>
+				<label translate="true">request_type</label>
+				<dataScope>request_type</dataScope>
+				<validation>
+					<rule name="required-entry" xsi:type="boolean">false</rule>
+				</validation>
+			</settings>
+		</field>
 		<field formElement="input" name="request_entity_id" sortOrder="20">
 			<argument name="data" xsi:type="array">
 				<item name="config" xsi:type="array">

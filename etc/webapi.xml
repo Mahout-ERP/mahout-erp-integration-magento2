@@ -1,51 +1,33 @@
 <?xml version="1.0" ?>
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
-	<route method="GET" url="/V1/mahout-erp/queue">
-		<service class="Mahout\ERP\Api\QueueManagementInterface" method="getQueue"/>
-		<resources>
-			<resource ref="anonymous"/>
-		</resources>
-	</route>
-	<route method="POST" url="/V1/mahout-erp/queue">
-		<service class="Mahout\ERP\Api\QueueManagementInterface" method="postQueue"/>
-		<resources>
-			<resource ref="anonymous"/>
-		</resources>
-	</route>
-	<route method="PUT" url="/V1/mahout-erp/queue">
-		<service class="Mahout\ERP\Api\QueueManagementInterface" method="putQueue"/>
-		<resources>
-			<resource ref="anonymous"/>
-		</resources>
-	</route>
-	<route method="DELETE" url="/V1/mahout-erp/queue">
-		<service class="Mahout\ERP\Api\QueueManagementInterface" method="deleteQueue"/>
-		<resources>
-			<resource ref="anonymous"/>
-		</resources>
-	</route>
-	<route method="GET" url="/V1/mahout-erp/queue/search">
-		<service class="Mahout\ERP\Api\QueueRepositoryInterface" method="getList"/>
-		<resources>
-			<resource ref="Mahout_ERP::Queue_view"/>
-		</resources>
-	</route>
-	<route method="GET" url="/V1/mahout-erp/queue/:queueId">
-		<service class="Mahout\ERP\Api\QueueRepositoryInterface" method="get"/>
-		<resources>
-			<resource ref="Mahout_ERP::Queue_view"/>
-		</resources>
-	</route>
-	<route method="PUT" url="/V1/mahout-erp/queue/:queueId">
-		<service class="Mahout\ERP\Api\QueueRepositoryInterface" method="save"/>
-		<resources>
-			<resource ref="Mahout_ERP::Queue_update"/>
-		</resources>
-	</route>
-	<route method="DELETE" url="/V1/mahout-erp/queue/:queueId">
-		<service class="Mahout\ERP\Api\QueueRepositoryInterface" method="deleteById"/>
-		<resources>
-			<resource ref="Mahout_ERP::Queue_delete"/>
-		</resources>
-	</route>
+    <route method="POST" url="/V1/mahout-erp/queue">
+        <service class="Mahout\ERP\Api\QueueRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Mahout_ERP::Queue_save"/>
+        </resources>
+    </route>
+    <route method="GET" url="/V1/mahout-erp/queue/search">
+        <service class="Mahout\ERP\Api\QueueRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="Mahout_ERP::Queue_view"/>
+        </resources>
+    </route>
+    <route method="GET" url="/V1/mahout-erp/queue/:queueId">
+        <service class="Mahout\ERP\Api\QueueRepositoryInterface" method="get"/>
+        <resources>
+            <resource ref="Mahout_ERP::Queue_view"/>
+        </resources>
+    </route>
+    <route method="PUT" url="/V1/mahout-erp/queue/:queueId">
+        <service class="Mahout\ERP\Api\QueueRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Mahout_ERP::Queue_update"/>
+        </resources>
+    </route>
+    <route method="DELETE" url="/V1/mahout-erp/queue/:queueId">
+        <service class="Mahout\ERP\Api\QueueRepositoryInterface" method="deleteById"/>
+        <resources>
+            <resource ref="Mahout_ERP::Queue_delete"/>
+        </resources>
+    </route>
 </routes>

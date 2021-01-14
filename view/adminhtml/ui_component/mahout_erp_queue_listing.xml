@@ -73,10 +73,10 @@
 				<label translate="true">ID</label>
 			</settings>
 		</column>
-		<column name="request_entity_id">
+		<column name="request_type">
 			<settings>
 				<filter>text</filter>
-				<label translate="true">request_entity_id</label>
+				<label translate="true">request_type</label>
 				<editor>
 					<editorType>text</editorType>
 					<validation>
@@ -92,6 +92,18 @@
 				<resizeDefaultWidth>107</resizeDefaultWidth>
 			</settings>
 		</actionsColumn>
+		<column name="request_entity_id">
+			<settings>
+				<filter>text</filter>
+				<label translate="true">request_entity_id</label>
+				<editor>
+					<editorType>text</editorType>
+					<validation>
+						<rule name="required-entry" xsi:type="boolean">false</rule>
+					</validation>
+				</editor>
+			</settings>
+		</column>
 		<column name="request_method">
 			<settings>
 				<filter>text</filter>

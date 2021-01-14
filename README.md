@@ -46,26 +46,13 @@ Magento 2 Module for integration with Mahout ERP Cloud
 
 ## Specifications
 
- - API Endpoint
-   - GET - Mahout\ERP\Api\QueueManagementInterface > Mahout\ERP\Model\QueueManagement
-
- - API Endpoint
-   - POST - Mahout\ERP\Api\QueueManagementInterface > Mahout\ERP\Model\QueueManagement
-
- - API Endpoint
-   - PUT - Mahout\ERP\Api\QueueManagementInterface > Mahout\ERP\Model\QueueManagement
-
- - API Endpoint
-   - DELETE - Mahout\ERP\Api\QueueManagementInterface > Mahout\ERP\Model\QueueManagement
-
-
  - Model
-    - Queue
+   - Queue
 
-    - sales_order_invoice_register > Mahout\ERP\Observer\Sales\OrderInvoiceRegister
+   - sales_order_invoice_register > Mahout\ERP\Observer\Sales\OrderInvoiceRegister
 
  - Cronjob
-    - mahout_erp_queue
+   - mahout_erp_queue
 
  - Crongroup
-    - default
+   - default
